@@ -56,7 +56,7 @@ interface
 {$I ZComponent.inc}
 
 uses
-  Types, Classes, SysUtils, {$IFDEF MSEgui}mclasses, mdb{$ELSE}Db{$ENDIF},
+  Windows, Types, Classes, SysUtils, {$IFDEF MSEgui}mclasses, mdb{$ELSE}Db{$ENDIF},
   Contnrs, {$IFDEF WITH_UNITANSISTRINGS}AnsiStrings, {$ENDIF}
   ZDbcIntfs, ZDbcCache, ZCompatibility, ZExpression, ZVariant, ZTokenizer;
 
