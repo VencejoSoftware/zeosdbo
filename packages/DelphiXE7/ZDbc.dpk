@@ -28,15 +28,15 @@ package ZDbc;
 {$LIBSUFFIX '210'}
 {$RUNONLY}
 {$IMPLICITBUILD OFF}
-{$I ZPackages.inc}
 
 requires
   ZParseSql,
   ZPlain,
-  rtl,
-  dbrtl;
+  rtl;
 
 contains
+{$I ZPackages.inc} //after simplify Zeos.Inc by using {$IF CompilerVersion > x} i need to move this include AFTER contains!
+
 {$IFDEF ENABLE_DBLIB}
   ZDbcDbLib in '..\..\src\dbc\ZDbcDbLib.pas',
   ZDbcDbLibMetadata in '..\..\src\dbc\ZDbcDbLibMetadata.pas',

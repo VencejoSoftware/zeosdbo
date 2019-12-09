@@ -1,14 +1,27 @@
-{ Dit bestand is automatisch aangemaakt door Lazarus. Niet wijzigen!
-  Deze broncode is alleen gebruikt voor compilatie en installatie.
+{ This file was automatically created by Lazarus. Do not edit!
+  This source is only used to compile and install the package.
  }
 
-unit zdbc; 
+unit zdbc;
 
+{$warn 5023 off : no warning about unused units}
 interface
 
 uses
-    ZDbcDbLib, ZDbcInterbase6, ZDbcIntfs, ZDbcMetadata, ZDbcMySql, ZDbcOracle, 
-  ZDbcPostgreSql, ZDbcSqLite, ZDbcASA, ZDbcPooled;
+  ZDbcAdo, ZDbcAdoMetadata, ZDbcAdoResultSet, ZDbcAdoStatement, ZDbcAdoUtils, 
+  ZDbcASA, ZDbcASAMetadata, ZDbcASAResultSet, ZDbcASAStatement, ZDbcASAUtils, 
+  ZDbcCache, ZDbcCachedResultSet, ZDbcConnection, ZDbcDbLib, 
+  ZDbcDbLibMetadata, ZDbcDbLibResultSet, ZDbcDbLibStatement, ZDbcDbLibUtils, 
+  ZDbcGenericResolver, ZDbcInterbase6, ZDbcInterbase6Metadata, 
+  ZDbcInterbase6ResultSet, ZDbcInterbase6Statement, ZDbcInterbase6Utils, 
+  ZDbcIntfs, ZDbcLogging, ZDbcMetadata, ZDbcMySql, ZDbcMySqlMetadata, 
+  ZDbcMySqlResultSet, ZDbcMySqlStatement, ZDbcMySqlUtils, ZDbcOracle, 
+  ZDbcOracleMetadata, ZDbcOracleResultSet, ZDbcOracleStatement, 
+  ZDbcOracleUtils, ZDbcPooled, ZDbcPostgreSql, ZDbcPostgreSqlMetadata, 
+  ZDbcPostgreSqlResultSet, ZDbcPostgreSqlStatement, ZDbcPostgreSqlUtils, 
+  ZDbcResultSet, ZDbcResultSetMetadata, ZDbcSqLite, ZDbcSqLiteMetadata, 
+  ZDbcSqLiteResultSet, ZDbcSqLiteStatement, ZDbcSqLiteUtils, ZDbcStatement, 
+  ZDbcUtils;
 
 implementation
 
